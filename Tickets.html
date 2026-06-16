@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tickets</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>body{
+background:#e5e5e5;
+font-family:Arial Black, sans-serif;
+margin:0;
+padding:0;
+color:black;
+}
+
+header{
+padding:30px;
+text-align:center;
+}
+
+.main-title{
+font-size:80px;
+margin:20px 0;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-bottom:40px;
+}
+
+nav a{
+text-decoration:none;
+color:black;
+font-size:24px;
+border:4px solid black;
+padding:10px 20px;
+transition:0.3s;
+background:white;
+}
+
+nav a:hover{
+background:black;
+color:white;
+}
+
+section{
+padding:50px 20px;
+text-align:center;
+}
+
+h2{
+font-size:50px;
+margin-bottom:20px;
+}
+
+img{
+width:100%;
+max-width:1100px;
+height:auto;
+display:block;
+margin:25px auto;
+border:6px solid black;
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin-top:30px;
+}
+
+.gallery img{
+width:450px;
+height:300px;
+object-fit:cover;
+}
+
+.video-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+margin-top:30px;
+}
+
+iframe{
+width:500px;
+height:280px;
+border:6px solid black;
+}
+
+.back-button{
+display:inline-block;
+margin-top:50px;
+font-size:26px;
+text-decoration:none;
+color:black;
+border:4px solid black;
+padding:12px 24px;
+transition:0.3s;
+background:white;
+}
+
+.back-button:hover{
+background:black;
+color:white;
+}
+
+@media(max-width:768px){
+
+.main-title{
+font-size:45px;
+}
+
+h2{
+font-size:34px;
+}
+
+nav a{
+font-size:18px;
+}
+
+.gallery img{
+width:100%;
+height:auto;
+}
+
+iframe{
+width:95%;
+height:240px;
+}
+
+}</style>
+<header>
+<h1 class="main-title">Tickets</h1>
+
+<nav>
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="artists.html">Artists</a>
+<a href="contact.html">Contact</a>
+	<a href="Tickets.html">Tickets</a>
+
+</nav>
+</header>
+
+<section>
+<h2>Festival Entry</h2>
+<img src="https://images.pexels.com/photos/27894051/pexels-photo-27894051.jpeg">
+</section>
+
+<section>
+<h2>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeAYrFxbaJLZblQ8YjgEV2vn9DYlPCjlJUlo_6jaUUaBcecVw/viewform?usp=dialog" target="_blank">
+Book Your Place
+</a>
+</h2>
+
+<img src="https://images.unsplash.com/photo-1511578314322-379afb476865">
+</section>
+
+<section>
+<h2>Event Information</h2>
+<img src="https://images.unsplash.com/photo-1515169067868-5387ec356754">
+</section>
+
+<section>
+<h2>Register Online</h2>
+<img src="https://images.unsplash.com/photo-1517842645767-c639042777db">
+
+<a href="Tickets.html" class="back-button">Back</a>
+</section>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Footer Section (HTML)</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --topbar:#111827;          /* purple strip */
+      --bg:#0b0b0b;              /* page background */
+      --panel:#1a1a1a;           /* footer main area */
+      --panel-2:#080808;         /* copyright strip */
+      --text:#e5e7eb;
+      --muted:#b7c0d1;
+      --line:rgba(255,255,255,.08);
+      --accent:#444444;
+      --shadow: 0 18px 60px rgba(0,0,0,.35);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+   body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg);
+  color:var(--text);
+}
+
+    /* Container to mimic the screenshot crop */
+    .frame{
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 18px;
+    }
+
+    footer{
+      border-radius: 14px;
+      overflow:hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,.06);
+      background: var(--panel);
+    }
+
+    /* Top social strip */
+    .social-strip{
+      background: var(--topbar);
+      color: rgba(255,255,255,.95);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 16px;
+      padding: 16px 22px;
+      font-size: 14px;
+      letter-spacing:.2px;
+    }
+
+    .social-strip .label{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      opacity:.95;
+      white-space:nowrap;
+    }
+
+    .social{
+      display:flex;
+      gap: 14px;
+      align-items:center;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+
+    .icon-btn{
+      width: 34px;
+      height: 34px;
+      display:grid;
+      place-items:center;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.22);
+      background: rgba(255,255,255,.10);
+      color: white;
+      text-decoration:none;
+      transition: transform .18s ease, background .18s ease, border-color .18s ease;
+      outline: none;
+    }
+    .icon-btn:hover{
+      transform: translateY(-2px);
+      background: rgba(255,255,255,.16);
+      border-color: rgba(255,255,255,.35);
+    }
+    .icon-btn:active{ transform: translateY(0px) scale(.98); }
+
+    .icon{
+      width: 16px;
+      height: 16px;
+      display:block;
+      fill: currentColor;
+    }
+
+    /* Main footer columns */
+    .footer-main{
+      padding: 26px 22px 18px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.04), transparent 40%),
+        var(--panel);
+    }
+
+    .cols{
+      display:grid;
+      grid-template-columns: 1.2fr 1fr 1fr 1fr 1.2fr;
+      gap: 30px;
+      padding: 10px 4px 18px;
+    }
+
+    .col h3{
+      font-family: Montserrat, Inter, sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: .9px;
+      margin: 0 0 14px;
+      text-transform: uppercase;
+      position:relative;
+      padding-bottom: 10px;
+    }
+
+    .col h3::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:0;
+      width: 54px;
+      height: 2px;
+      background: rgba(124,108,255,.65);
+      border-radius: 999px;
+      box-shadow: 0 0 0 1px rgba(124,108,255,.10);
+    }
+
+    .col p{
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+      max-width: 44ch;
+    }
+
+    .list{
+      list-style:none;
+      padding:0;
+      margin:0;
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+    }
+
+    .list a{
+      color: var(--muted);
+      text-decoration:none;
+      font-size: 14px;
+      transition: color .15s ease, transform .15s ease;
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+    }
+    .list a:hover{
+      color: var(--text);
+      transform: translateX(2px);
+    }
+
+    .contact-item{
+      display:flex;
+      gap: 10px;
+      align-items:flex-start;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .contact-item svg{
+      width: 16px;
+      height: 16px;
+      flex: 0 0 16px;
+      margin-top: 2px;
+      fill: rgba(255,255,255,.85);
+      opacity:.9;
+    }
+
+    /* Divider & copyright */
+    .divider{
+      height:1px;
+      background: var(--line);
+      margin: 6px 0 0;
+    }
+
+    .copyright{
+      background: var(--panel-2);
+      padding: 14px 22px;
+      text-align:center;
+      font-size: 13px;
+      color: rgba(229,231,235,.9);
+    }
+    .copyright a{
+      color: rgba(229,231,235,.95);
+      text-decoration:none;
+      border-bottom: 1px dashed rgba(229,231,235,.45);
+    }
+    .copyright a:hover{
+      border-bottom-color: rgba(229,231,235,.85);
+    }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .cols{ grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 620px){
+      .social-strip{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+      .social{ justify-content:flex-start; }
+      .cols{ grid-template-columns: 1fr; gap: 22px; }
+    }
+
+    /* Subtle reveal (optional) */
+    @keyframes riseIn{
+      from{ opacity:0; transform: translateY(10px); }
+      to{ opacity:1; transform: translateY(0); }
+    }
+    .reveal{
+      animation: riseIn .6s ease both;
+    }
+    .reveal.d2{ animation-delay:.08s; }
+    .reveal.d3{ animation-delay:.16s; }
+    .reveal.d4{ animation-delay:.24s; }
+    .reveal.d5{ animation-delay:.32s; }
+
+  </style>
+</head>
+
+<body>
+  <div class="frame">
+    <footer aria-label="Site footer">
+      <div class="social-strip">
+        <div class="label">
+          <span>Stay connected with Youth Arts Festival!</span>
+         </div>
+       </div>
+
+      <div class="footer-main">
+        <div class="cols">
+          <section class="col reveal" aria-label="Company">
+            <h3>Youth Arts Festival</h3>
+            <p>
+              The Youth Arts Festival website will introduce the festival and showcase young musicians, poets, dancers, and digital artists. It will share information about events, workshops, photos, videos, and social media updates. The site will have a bright, creative design with simple navigation and will work well on phones, tablets, and computers, with accessible text and clear colour contrast.
+            </p>
+          </section>
+
+          <section class="col reveal d2" aria-label="Tickets">
+            <h3>Tickets</h3>
+            <ul class="list">
+              <li><a href="#">General Admission</a></li>
+              <li><a href="#">Weekend Pass</a></li>
+              <li><a href="#">Student/Senior Ticket</a></li>
+              <li><a href="#">Family Ticket</a></li>
+              <li><a href="#">Workshop Pass</a></li>
+              
+            </ul>
+          </section>
+
+          <section class="col reveal d3" aria-label="Festival Schedule">
+            <h3>Festival Schedule</h3>
+            <ul class="list">
+              <li><a href="#">Full Schedule</a></li>
+              <li><a href="#">Workshops & Activities</a></li>
+              <li><a href="#">Daily Highlights</a></li>
+              <li><a href="#">Festival Map & Times</a></li>
+              <li><a href="#">Add to Calendar</a></li>
+
+            </ul>
+          </section>
+
+            <section class="col reveal d3" aria-label="FAQs">
+            <h3>FAQs</h3>
+            <ul class="list">
+              <li><a href="#">General Questions</a></li>
+              <li><a href="#">Ticketing & Refunds</a></li>
+              <li><a href="#">Venue & Accessibility</a></li>
+              <li><a href="#">Lost & Found</a></li> 
+              <li><a href="#">Contact Support</a></li>
+
+            </ul>
+          </section>
+
+          <section class="col reveal d5" aria-label="Contact">
+            <h3>Contact</h3>
+            <div class="list" role="list">
+              <div class="contact-item" role="listitem">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 3 9v13h6v-7h6v7h6V9l-9-7zm7 18h-2v-7H7v7H5V10l7-5.4L19 10v10z"/></svg>
+                <span>London, SW1A 1AA, UK</span>
+              </div>
+              <div class="contact-item" role="listitem">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/></svg>
+                <a href="mailto:contact@youthartsfestival.org" style="color:inherit;text-decoration:none">contact@youthartsfestival.org</a>
+              </div>
+              <div class="contact-item" role="listitem">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.7 3.9 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.7.1.4 0 .8-.3 1.1l-2.2 2.2z"/></svg>
+                <a href="tel:+44 07576478935" style="color:inherit;text-decoration:none">+44 7764 78935 </a>
+              </div>
+              <div class="contact-item" role="listitem">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 7h-1V5a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3v2H5a3 3 0 0 0-3 3v7a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-7a3 3 0 0 0-3-3zM8 5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H8V5zm12 14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v7z"/></svg>
+                <a href="tel:+442079460958" style="color:inherit;text-decoration:none">+44 20 7946 0958</a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="divider" role="presentation"></div>
+      </div>
+
+      <div class="copyright">
+        © 2026 Copyright: <a href="#" aria-label="Youth Arts Festival link">YouthArtsFestival.com</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Optional: scroll-trigger reveal for the columns
+    const els = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if(e.isIntersecting){
+          e.target.style.animationPlayState = 'running';
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    els.forEach(el => {
+      el.style.animationPlayState = 'paused';
+      io.observe(el);
+    });
+  </script>
+
+
+
